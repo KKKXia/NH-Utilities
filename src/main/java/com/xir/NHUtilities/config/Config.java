@@ -58,10 +58,7 @@ public class Config {
     public static boolean enableNumberMultiplierTexture = false;
     public static boolean enableResetRemainingTime = false;
     public static boolean disableShiftModification = false;
-    public static int acceleratorDuration = 600;
-    public static int getAcceleratorDuration() {
-        return acceleratorDuration;
-    }
+    public static int eternityVialAcceleratorDuration = 1200;
     // endregion
 
     // region register mixins category key region
@@ -131,14 +128,6 @@ public class Config {
 
             enableTimeVial = configuration
                 .getBoolean("enableTimeVial", CATEGORY_TIME_VIAL, enableTimeVial, "enable Time Vial");
-
-            acceleratorDuration = configuration.getInt(
-                "acceleratorDuration",
-                CATEGORY_TIME_VIAL,
-                acceleratorDuration,
-                20,
-                72000,
-                "Duration of time accelerator entity in ticks (20 ticks = 1 second)");
 
             enableEternityVial = configuration
                 .getBoolean("enableEternityVial", CATEGORY_TIME_VIAL, enableEternityVial, "enable Eternity Vial");
