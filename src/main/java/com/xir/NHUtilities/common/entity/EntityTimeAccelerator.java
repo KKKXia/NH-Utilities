@@ -23,7 +23,7 @@ public class EntityTimeAccelerator extends Entity {
 
     // region Fields
     private int timeRate = enableTimeAcceleratorBoost ? 8 : 4; // must be set in here for texture render init
-    public static final int ACCELERATION_TICK = Config.getAcceleratorDuration();
+    public static final int ACCELERATION_TICK = Config.eternityVialAcceleratorDuration;
     private int remainingTime = ACCELERATION_TICK;
     private boolean isGregTechMachineMode = true;
 

@@ -215,6 +215,14 @@ public class Config {
                 enableEternityVialCosmicRenderDeepening,
                 "enable Eternity Vial Cosmic Render Deepening");
 
+            eternityVialAcceleratorDuration = configuration.getInt(
+                "eternityVialAcceleratorDuration",
+                CATEGORY_TIME_VIAL,
+                eternityVialAcceleratorDuration,
+                600,
+                72000,
+                "Duration of time accelerator entity in ticks (20 ticks = 1 second)");
+
             enableModifyEnderIoCapBankIO = configuration.getBoolean(
                 "enableModifyEnderIoCapBankIO",
                 CATEGORY_MIXIN_CONFIG,
